@@ -1,0 +1,54 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- css for iziToast -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css" />
+
+    <style>
+        .nav-link{
+            cursor: pointer;
+        }
+    </style>
+      
+</head>  
+<body ng-app="app" ng-controller="appController">  
+    <!-- start navbar -->
+    <table style="width:100%;">  
+        <tr>  
+            <td><a ng-click="fnGoToPage('home');" class="nav-link">Home</a></td>  
+            <td><a ng-click="fnGoToPage('1st');" class="nav-link">First Page</a></td>  
+            <td><a ng-click="fnGoToPage('2nd');" class="nav-link">Second Page</a></td>  
+            <td><a ng-click="fnGoToPage('3rd');" class="nav-link">Third Page</a></td>  
+        </tr>  
+    </table>  
+    <!-- end navbar -->
+    <!-- start dynamic ng-view -->
+    <div class="pgHolder" ng-view>  
+    </div>
+    <!-- end dynamic ng-view -->
+    <!-- start code for test with iziToast and Jquery -->
+    <div class="container">
+        <button class="btn btn-primary" id="infoClick">Info</button>
+        <button class="btn btn-primary" id="#any">Any Error </button>
+        <button class="btn btn-success" id="successClick">Success</button>
+        <button class="btn btn-warning" id="warningClick">Warning</button>
+        <button class="btn btn-danger" id="errorClick">Error</button>
+        <button class="btn btn-default" id="customClick">Custom</button>
+    </div>
+    <!-- end code for test with iziToast and Jquery -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>  
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js"></script>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <!-- script for iziToast -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
+      <script type="text/javascript" src="index.js"></script>
+      <script type="text/javascript" src="app.config.js"></script>
+    <script src="iziToast.js"></script>
+</body>  
+</html>  

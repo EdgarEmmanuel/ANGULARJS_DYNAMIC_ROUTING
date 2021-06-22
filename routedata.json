@@ -1,0 +1,24 @@
+{  
+    "records": [  
+        {  
+            "KeyName": "home",  
+            "PageUrls": "pages/Home.html",  
+            "Controller": "HomeController"  
+        },  
+        {  
+            "KeyName": "1st",  
+            "PageUrls": "pages/FirstPage.html",  
+            "Controller": "FirstController"  
+        },  
+        {  
+            "KeyName": "2nd",  
+            "PageUrls": "pages/SecondPage.html",  
+            "Controller": "SecondController"  
+        },  
+        {  
+            "KeyName": "3rd",  
+            "PageUrls": "pages/ThirdPage.html",  
+            "Controller": "ThirdController"  
+        }  
+    ]  
+}  
